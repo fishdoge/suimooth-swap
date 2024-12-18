@@ -25,7 +25,7 @@ export default function Banner() {
                 </div>
               </div>
               <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 group-hover:from-blue-300 group-hover:to-purple-300 transition-all duration-300">
-                Suimooth Swap
+                Suimooth
               </span>
             </Link>
             <nav className="hidden md:flex items-center gap-6">

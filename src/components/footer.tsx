@@ -16,7 +16,7 @@ export default function Footer() {
                 </div>
               </div>
               <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
-                Suimooth Swap
+                Suimooth
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
@@ -73,7 +73,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="pt-4 text-xs text-muted-foreground">
-              © 2024 Suimooth Swap. All rights reserved.
+              © 2024 Suimooth . All rights reserved.
             </div>
           </div>
         </div>

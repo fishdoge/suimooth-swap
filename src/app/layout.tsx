@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Suimooth Swap - Next Generation DEX",
+  title: "Suimooth - Next Generation DEX",
   description: "Trade, earn, and grow your crypto assets with confidence on Sui blockchain",
 }
 
