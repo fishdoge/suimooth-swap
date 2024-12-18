@@ -1,5 +1,5 @@
 "use client"
-
+import { ConnectButton } from '@mysten/dapp-kit';
 import { Button } from "@/components/ui/button"
 import { WalletIcon, Menu } from 'lucide-react'
 import Link from "next/link"
@@ -38,23 +38,19 @@ export default function Banner() {
               <Link href="/farms" className="text-sm text-white/70 hover:text-white transition-colors">
                 Farms
               </Link>
-              <Link href="/stake" className="text-sm text-white/70 hover:text-white transition-colors">
-                Stake
-              </Link>
+
             </nav>
           </div>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
-            <Button 
-              variant="outline" 
-              className="hidden md:flex gap-2 group relative overflow-hidden neon-border"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <WalletIcon className="w-4 h-4" />
-              Connect Wallet
-            </Button>
-            
+          <div className="flex items-center gap-4 ">
+            {/* <Button
+              variant="outline"
+              className="hidden md:flex gap-2 group relative overflow-hidden neon-border w-[120px] bg-black"
+            > */}
+              <ConnectButton className="reset-style" />
+            {/* </Button> */}
+
             {/* Mobile Menu */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -78,11 +74,7 @@ export default function Banner() {
                     Farms
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link href="/stake" className="flex items-center w-full">
-                    Stake
-                  </Link>
-                </DropdownMenuItem>
+
                 <DropdownMenuItem>
                   <Button variant="outline" className="w-full gap-2 neon-border">
                     <WalletIcon className="w-4 h-4" />

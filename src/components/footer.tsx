@@ -43,11 +43,6 @@ export default function Footer() {
                   Farms
                 </Link>
               </li>
-              <li>
-                <Link href="/stake" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Stake
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -55,22 +50,22 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold">Community</h3>
             <div className="flex gap-4">
-              <Link 
-                href="https://twitter.com" 
+              <Link
+                href="https://twitter.com"
                 target="_blank"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 transition-colors"
               >
                 <Twitter className="w-4 h-4" />
               </Link>
-              <Link 
-                href="https://discord.com" 
+              <Link
+                href="https://discord.com"
                 target="_blank"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 transition-colors"
               >
                 <Discord className="w-4 h-4" />
               </Link>
-              <Link 
-                href="https://github.com" 
+              <Link
+                href="https://github.com"
                 target="_blank"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 transition-colors"
               >

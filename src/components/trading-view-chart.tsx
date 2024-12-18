@@ -6,18 +6,18 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ChartContainer, ChartTooltip } from "@/components/ui/chart"
 
 // 模擬價格數據
-const data = Array.from({ length: 100 }, (_, i) => ({
-  time: new Date(Date.now() - (100 - i) * 3600000).toISOString(),
-  price: 45000 + Math.random() * 1000,
+const data = Array.from({ length: 50 }, (_, i) => ({
+  time: new Date(Date.now() - (50 - i) * 360000).toISOString(),
+  price: 4 + Math.random() * 1,
   volume: Math.random() * 100
 }))
 
 export default function TradingViewChart() {
   return (
-    <Card className="backdrop-blur-sm bg-background/80 border-primary/20 shadow-lg shadow-primary/10">
+    <Card className="backdrop-blur-sm bg-background/80 border-primary/20 shadow-lg shadow-primary/10 w-full">
       <CardHeader>
-        <div className="flex justify-between items-center">
-          <CardTitle>BTC/USDT</CardTitle>
+        <div className="flex justify-between items-center w-full">
+          <CardTitle>SUI/USDT</CardTitle>
           <Tabs defaultValue="1h">
             <TabsList>
               <TabsTrigger value="15m">15m</TabsTrigger>
@@ -42,7 +42,7 @@ export default function TradingViewChart() {
 
             },
           }}
-          className="h-[400px]"
+          className="h-[600px]"
         >
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
