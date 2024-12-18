@@ -7,6 +7,6 @@ Suimooth is a decentralized exchange designed based on the Deepbook architecture
 
 ## how to deploy
 
-- [git clone ](https://github.com/fishdoge/suimooth-swap.git)
+- git clone https://github.com/fishdoge/suimooth-swap.git
 - npm install
 - npm run dev
